@@ -1,11 +1,11 @@
 package ru.otus.agaryov.dz5.domain;
 
-public class Author {
+public class Writer {
 
     private final int id;
     private final String name;
 
-    public Author(int id, String name) {
+    public Writer(int id, String name) {
         this.id = id;
         this.name = name;
     }
