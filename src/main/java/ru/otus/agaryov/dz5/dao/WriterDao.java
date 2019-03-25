@@ -12,5 +12,5 @@ public interface WriterDao {
 
     Writer getById(int id);
 
-    List<Writer> getAll();
+    List getAll();
 }

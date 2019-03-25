@@ -7,6 +7,8 @@ import org.springframework.context.ApplicationContext;
 import ru.otus.agaryov.dz5.dao.WriterDao;
 import ru.otus.agaryov.dz5.domain.Writer;
 
+import java.util.List;
+
 @SpringBootApplication
 public class Main {
 
@@ -22,6 +24,8 @@ public class Main {
         System.out.println("All count " + dao.count());
 
         Writer ivan = dao.getById(2);
+
+        System.out.println(dao.getAll());
 
         System.out.println("Ivan id: " + ivan.getId() + " name: " + ivan.getName());
 

@@ -36,7 +36,8 @@ public class GenreDaoJdbc implements GenreDao {
 
     @Override
     public List<Genre> getAll() {
-        return jdbc.queryForList("select * from genres", Genre.class, new GenreMapper());
+        return jdbc.queryForList("select *" +
+                " from genres", Genre.class, new GenreMapper());
     }
 
     private static class GenreMapper implements RowMapper<Genre> {

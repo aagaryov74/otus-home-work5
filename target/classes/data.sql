@@ -4,6 +4,7 @@ values (1, 'А. С. Пушкин');
 insert into writers
   (id, name)
 values (2, 'М. Ю. Лермонтов');
+
 insert into genre
   (id,name)
 values (1,'Драма');
