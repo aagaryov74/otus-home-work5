@@ -12,6 +12,8 @@ public interface GenreDao {
 
     void insert(Genre genre);
 
+    Number insertByName(String name);
+
     Genre getById(int id);
 
     List<Genre> getAll();

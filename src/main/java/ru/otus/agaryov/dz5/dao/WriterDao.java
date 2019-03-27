@@ -10,7 +10,9 @@ public interface WriterDao {
 
     void insert(Writer writer);
 
+    Number insertByName(String name);
+
     Writer getById(int id);
 
-    List getAll();
+    List<Writer> getAll();
 }

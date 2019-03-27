@@ -1,21 +1,23 @@
 DROP TABLE IF EXISTS writers;
 CREATE TABLE writers(
-  ID INT PRIMARY KEY,
-   NAME VARCHAR(255)
+  ID BIGINT  AUTO_INCREMENT PRIMARY KEY,
+   NAME VARCHAR(255) not null,
+  constraint writers_pk
+    primary key (id)
 );
 DROP TABLE IF EXISTS books;
 CREATE TABLE books(
-  ID INT PRIMARY KEY,
+  ID BIGINT AUTO_INCREMENT PRIMARY KEY,
   writer_id INT,
   genre_id INT,
   NAME VARCHAR(255)
 );
-DROP TABLE IF EXISTS genre;
-create table genre
+DROP TABLE IF EXISTS genres;
+create table genres
 (
-  id int,
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
   name varchar(255) not null,
-  constraint genre_pk
+  constraint genres_pk
     primary key (id)
 );
 
